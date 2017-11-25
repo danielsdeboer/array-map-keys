@@ -77,4 +77,33 @@ class MapWithKeyTest extends TestCase
 
         $this->assertSame($expected, $results);
     }
+
+    /** @test */
+    public function input_arrays_may_be_any_length ()
+    {
+        $input = [
+            'key1' => [
+                'name' => 'Some Name',
+                'email' => 'some@email.com'
+            ],
+
+            'key2' => [
+                'name' => 'Some OtherName',
+                'email' => 'some@otherEmail.com'
+            ]
+        ];
+
+        $callback = function ($key, $value) {
+            return [$value['name'] => $value['email']];
+        };
+
+        $results = array_map_keys($input, $callback);
+
+        $expected = [
+            'Some Name' => 'some@email.com',
+            'Some OtherName' => 'some@otherEmail.com'
+        ];
+
+        $this->assertSame($expected, $results);
+    }
 }
