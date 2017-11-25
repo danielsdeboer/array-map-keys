@@ -1,6 +1,10 @@
+[![Latest Stable Version](https://poser.pugx.org/aviator/array-map-keys/v/stable)](https://packagist.org/packages/aviator/array-map-keys)
+[![License](https://poser.pugx.org/aviator/array-map-keys/license)](https://packagist.org/packages/aviator/array-map-keys)
+[![Build Status](https://travis-ci.org/danielsdeboer/array-map-keys.svg?branch=master)](https://travis-ci.org/danielsdeboer/array-map-keys)
+
 ## Overview
 
-PHP's `array_map()` function doesn't allow associative array key mutation. This package provides a function, `array_map_keys()` which does.
+PHP's `array_map()` function doesn't allow associative array key mutation. This package provides a function, `array_map_keys()`, which does.
 
 The function iterates over an array and mutates each array item with the provided callback.
 
