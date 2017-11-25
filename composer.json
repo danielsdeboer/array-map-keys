@@ -1,0 +1,42 @@
+{
+    "name": "aviator/array-map-keys",
+    "type": "library",
+    "description": "Array map with keys",
+    "keywords": [
+        "php",
+        "php7",
+        "functional",
+        "map",
+        "arrays"
+    ],
+    "homepage": "https://github.com/danielsdeboer/array-map-keys",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel S. Deboer",
+            "email": "daniel.s.deboer@gmail.com",
+            "homepage": "https://aviatorcreative.ca",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "src/functions.php"
+        ]
+    },
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.4.0",
+        "larapack/dd": "^1.1"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Aviator\\ArrayMapKeys\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
